@@ -1,10 +1,10 @@
 # Bank of England Exchange Rate API client
 
-Official **Bank of England** (the United Kingdom) daily exchange rates in Node.js / TypeScript — ~23 currencies against the GBP, with history back to 2016. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
+Official **Bank of England** (the United Kingdom) daily exchange rates in Node.js / TypeScript — 23 currencies against the GBP, with history back to 2016. Zero dependencies, works in Node 18+, Bun, Deno, and edge runtimes (uses global `fetch`).
 
-These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the bank's own publication date.
+These are the *published central bank rates* required for tax filings, customs valuations, audits, and compliant invoicing — not moving market rates. Every response carries the publisher's own publication date.
 
-Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/boe/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — 300 requests/month, no credit card.
+Powered by [AllRatesToday](https://allratestoday.com/central-bank-rates-api/boe/). Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required.
 
 ## Install
 
@@ -42,6 +42,14 @@ const series = await getHistory(
 );
 ```
 
+## Currencies covered
+
+Bank of England currently publishes rates covering **24 currencies** (as of the latest table):
+
+`AUD` · `CAD` · `CHF` · `CNY` · `DKK` · `EUR` · `GBP` · `HKD` · `ILS` · `INR` · `JPY` · `KRW` · `MYR` · `NOK` · `NZD` · `PLN` · `SAR` · `SEK` · `SGD` · `THB` · `TRY` · `TWD` · `USD` · `ZAR`
+
+Pairs the central bank does not print directly are resolved from this table (see below).
+
 ## Published vs derived rates
 
 If Bank of England does not print a pair directly, the API resolves it from the bank's table (inverse, or a cross rate via GBP) and flags it `derived: true` with the `method` — so official and computed values are never confused.
@@ -50,7 +58,7 @@ If Bank of England does not print a pair directly, the API resolves it from the 
 
 - Every request counts toward your AllRatesToday monthly quota. Rates change once per business day — cache a day's table locally and a small quota goes a long way.
 - Latest rates are on every plan (including free); historical dates and time series need a [paid plan](https://allratestoday.com/pricing/).
-- Full API reference: [allratestoday.com/docs#central-bank](https://allratestoday.com/docs/#central-bank) · All covered banks: [central bank rates API](https://allratestoday.com/central-bank-rates-api/)
+- Full API reference: [allratestoday.com/docs#central-bank](https://allratestoday.com/docs/#central-bank) · All covered sources: [central bank rates API](https://allratestoday.com/central-bank-rates-api/)
 
 ## License
 
