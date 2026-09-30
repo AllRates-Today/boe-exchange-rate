@@ -85,10 +85,10 @@ const pair = await getRate('GBP', 'USD', { apiKey: 'art_live_...' });
 {
   bank: 'boe',
   name: 'Bank of England',
-  rate_date: '2026-09-08',   // Bank of England's own publication date
+  rate_date: '2026-09-24',   // Bank of England's own publication date
   source: 'GBP',
   target: 'USD',
-  rate: 1.3553,
+  rate: 1.322,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'boe',
   name: 'Bank of England',
-  rate_date: '2026-09-08',
+  rate_date: '2026-09-24',
   rates: [
-    { "base": "GBP", "quote": "USD", "type": "reference", "value": 1.3553 },
+    { "base": "GBP", "quote": "USD", "type": "reference", "value": 1.322 },
     // … the rest of the published table (23 currencies vs GBP)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'boe-exchange-rate';
 
 const series = await getHistory(
-  { source: 'GBP', target: 'USD', from: '2026-01-01', to: '2026-09-08' },
+  { source: 'GBP', target: 'USD', from: '2026-01-01', to: '2026-09-24' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'GBP',
   target: 'USD',
   from: '2026-01-01',
-  to: '2026-09-08',
+  to: '2026-09-24',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-08', rate: 1.3553, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-09-24', rate: 1.322, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
