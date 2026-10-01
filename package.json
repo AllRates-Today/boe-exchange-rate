@@ -1,6 +1,6 @@
 {
   "name": "boe-exchange-rate",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Official Bank of England (United Kingdom) daily exchange rates — 23 currencies vs GBP, history since 2016. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "boe",
