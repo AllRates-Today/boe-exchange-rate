@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/boe-exchange-rate.svg)](https://github.com/AllRates-Today/boe-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/boe-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![GBP/USD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fboe%3Fsource%3DGBP%26target%3DUSD&query=%24.rate&label=GBP%2FUSD%20published%20by%20Bank%20of%20England&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/boe/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fboe%3Fsource%3DGBP%26target%3DUSD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/boe/)
 
 **Official Bank of England (the United Kingdom) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers Bank of England itself prints, every business day.**
 
@@ -32,6 +34,42 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full Bank of England table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-07** by Bank of England — 23 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| GBP | AUD | reference | 1.8985 |
+| GBP | CAD | reference | 1.8835 |
+| GBP | CHF | reference | 1.1006 |
+| GBP | CNY | reference | 8.8633 |
+| GBP | DKK | reference | 8.8267 |
+| GBP | EUR | reference | 1.1809 |
+| GBP | HKD | reference | 10.375 |
+| GBP | ILS | reference | 4.0608 |
+| GBP | INR | reference | 127.9177 |
+| GBP | JPY | reference | 208.9937 |
+| GBP | KRW | reference | 1769.9589 |
+| GBP | MYR | reference | 5.4041 |
+| GBP | NOK | reference | 12.6504 |
+| GBP | NZD | reference | 2.3619 |
+| GBP | PLN | reference | 5.1721 |
+| GBP | SAR | reference | 4.9629 |
+| GBP | SEK | reference | 13.2401 |
+| GBP | SGD | reference | 1.6918 |
+| GBP | THB | reference | 44.5101 |
+| GBP | TRY | reference | 65.0364 |
+| GBP | TWD | reference | 42.1279 |
+| GBP | USD | reference | 1.322 |
+| GBP | ZAR | reference | 22.0093 |
+
+Source: [Official rates published by BOE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boe/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
