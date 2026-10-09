@@ -40,33 +40,33 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 Today's full Bank of England table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-07** by Bank of England — 23 rates. Updated 2026-10-08.
+Published **2026-10-08** by Bank of England — 23 rates. Updated 2026-10-09.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| GBP | AUD | reference | 1.8985 |
-| GBP | CAD | reference | 1.8835 |
-| GBP | CHF | reference | 1.1006 |
-| GBP | CNY | reference | 8.8633 |
-| GBP | DKK | reference | 8.8267 |
-| GBP | EUR | reference | 1.1809 |
-| GBP | HKD | reference | 10.375 |
-| GBP | ILS | reference | 4.0608 |
-| GBP | INR | reference | 127.9177 |
-| GBP | JPY | reference | 208.9937 |
-| GBP | KRW | reference | 1769.9589 |
-| GBP | MYR | reference | 5.4041 |
-| GBP | NOK | reference | 12.6504 |
-| GBP | NZD | reference | 2.3619 |
-| GBP | PLN | reference | 5.1721 |
-| GBP | SAR | reference | 4.9629 |
-| GBP | SEK | reference | 13.2401 |
-| GBP | SGD | reference | 1.6918 |
-| GBP | THB | reference | 44.5101 |
-| GBP | TRY | reference | 65.0364 |
-| GBP | TWD | reference | 42.1279 |
-| GBP | USD | reference | 1.322 |
-| GBP | ZAR | reference | 22.0093 |
+| GBP | AUD | reference | 1.8995 |
+| GBP | CAD | reference | 1.8819 |
+| GBP | CHF | reference | 1.1016 |
+| GBP | CNY | reference | 8.8672 |
+| GBP | DKK | reference | 8.8205 |
+| GBP | EUR | reference | 1.18 |
+| GBP | HKD | reference | 10.38 |
+| GBP | ILS | reference | 4.051 |
+| GBP | INR | reference | 128.003 |
+| GBP | JPY | reference | 209.234 |
+| GBP | KRW | reference | 1774.6637 |
+| GBP | MYR | reference | 5.4112 |
+| GBP | NOK | reference | 12.6469 |
+| GBP | NZD | reference | 2.3606 |
+| GBP | PLN | reference | 5.1685 |
+| GBP | SAR | reference | 4.9654 |
+| GBP | SEK | reference | 13.2058 |
+| GBP | SGD | reference | 1.6941 |
+| GBP | THB | reference | 44.5369 |
+| GBP | TRY | reference | 65.0892 |
+| GBP | TWD | reference | 42.2462 |
+| GBP | USD | reference | 1.3226 |
+| GBP | ZAR | reference | 21.9891 |
 
 Source: [Official rates published by BOE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boe/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
