@@ -42,7 +42,7 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-12** by Bank of England — 23 rates. Updated 2026-10-13.
+Published **2026-10-12** by Bank of England — 23 rates. Updated 2026-10-14.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
@@ -125,10 +125,10 @@ const pair = await getRate('GBP', 'USD', { apiKey: 'art_live_...' });
 {
   bank: 'boe',
   name: 'Bank of England',
-  rate_date: '2026-10-08',   // Bank of England's own publication date
+  rate_date: '2026-10-12',   // Bank of England's own publication date
   source: 'GBP',
   target: 'USD',
-  rate: 1.3226,
+  rate: 1.322,
   rate_type: 'reference',
   derived: false,
   method: 'published',
@@ -153,9 +153,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'boe',
   name: 'Bank of England',
-  rate_date: '2026-10-08',
+  rate_date: '2026-10-12',
   rates: [
-    { "base": "GBP", "quote": "USD", "type": "reference", "value": 1.3226 },
+    { "base": "GBP", "quote": "USD", "type": "reference", "value": 1.322 },
     // … the rest of the published table (23 currencies vs GBP)
   ],
   disclaimer: '…'
@@ -195,7 +195,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'boe-exchange-rate';
 
 const series = await getHistory(
-  { source: 'GBP', target: 'USD', from: '2026-01-01', to: '2026-10-08' },
+  { source: 'GBP', target: 'USD', from: '2026-01-01', to: '2026-10-12' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -208,11 +208,11 @@ const series = await getHistory(
   source: 'GBP',
   target: 'USD',
   from: '2026-01-01',
-  to: '2026-10-08',
+  to: '2026-10-12',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-10-08', rate: 1.3226, rate_type: 'reference', derived: false, method: 'published' },
+    { date: '2026-10-12', rate: 1.322, rate_type: 'reference', derived: false, method: 'published' },
     // …
   ],
   disclaimer: '…'
@@ -331,9 +331,9 @@ getRate('GBP', 'USD', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 
 Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
 
-- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/boe.csv`)
+- Hugging Face: [AllRatesToday/central-bank-exchange-rates](https://huggingface.co/datasets/AllRatesToday/central-bank-exchange-rates) — one CSV per institution (`rates/boe.csv`)
 - Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
-- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/boe/latest.json`
+- Raw JSON on GitHub: `https://raw.githubusercontent.com/AllRates-Today/central-bank-exchange-rates/main/data/boe/latest.json`
 
 ## 🔗 Links
 
