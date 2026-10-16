@@ -42,33 +42,33 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-14** by Bank of England — 23 rates. Updated 2026-10-15.
+Published **2026-10-15** by Bank of England — 23 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| GBP | AUD | reference | 1.8909 |
-| GBP | CAD | reference | 1.8794 |
-| GBP | CHF | reference | 1.1038 |
-| GBP | CNY | reference | 8.8155 |
-| GBP | DKK | reference | 8.8448 |
-| GBP | EUR | reference | 1.1832 |
-| GBP | HKD | reference | 10.328 |
-| GBP | ILS | reference | 4.0765 |
-| GBP | INR | reference | 125.2192 |
-| GBP | JPY | reference | 209.0123 |
-| GBP | KRW | reference | 1766.3339 |
-| GBP | MYR | reference | 5.3724 |
-| GBP | NOK | reference | 12.5701 |
-| GBP | NZD | reference | 2.3609 |
-| GBP | PLN | reference | 5.1743 |
-| GBP | SAR | reference | 4.9406 |
-| GBP | SEK | reference | 13.2503 |
-| GBP | SGD | reference | 1.6933 |
-| GBP | THB | reference | 44.3475 |
-| GBP | TRY | reference | 64.9978 |
-| GBP | TWD | reference | 42.3052 |
-| GBP | USD | reference | 1.316 |
-| GBP | ZAR | reference | 21.9075 |
+| GBP | AUD | reference | 1.9147 |
+| GBP | CAD | reference | 1.8813 |
+| GBP | CHF | reference | 1.099 |
+| GBP | CNY | reference | 8.8661 |
+| GBP | DKK | reference | 8.8435 |
+| GBP | EUR | reference | 1.183 |
+| GBP | HKD | reference | 10.3992 |
+| GBP | ILS | reference | 4.1135 |
+| GBP | INR | reference | 125.9783 |
+| GBP | JPY | reference | 209.4823 |
+| GBP | KRW | reference | 1780.3607 |
+| GBP | MYR | reference | 5.4096 |
+| GBP | NOK | reference | 12.5728 |
+| GBP | NZD | reference | 2.3602 |
+| GBP | PLN | reference | 5.1683 |
+| GBP | SAR | reference | 4.9734 |
+| GBP | SEK | reference | 13.1997 |
+| GBP | SGD | reference | 1.6997 |
+| GBP | THB | reference | 44.4158 |
+| GBP | TRY | reference | 65.4904 |
+| GBP | TWD | reference | 42.9315 |
+| GBP | USD | reference | 1.3253 |
+| GBP | ZAR | reference | 21.8884 |
 
 Source: [Official rates published by BOE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boe/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -262,7 +262,7 @@ curl "https://allratestoday.com/api/v1/central-bank/boe/latest?format=xml&api_ke
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('boe')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate boe ...` command
-- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
+- Evaluating? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days that covers the free-plan methods (latest table, pairs); dated tables and history need a [paid plan](https://allratestoday.com/pricing/). The MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
