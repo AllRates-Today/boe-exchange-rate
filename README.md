@@ -43,33 +43,33 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-15 by Bank of England — 23 rates. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-16 by Bank of England — 23 rates. Updated 2026-10-19.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| GBP | AUD | reference | 1.9147 |
-| GBP | CAD | reference | 1.8813 |
-| GBP | CHF | reference | 1.099 |
-| GBP | CNY | reference | 8.8661 |
-| GBP | DKK | reference | 8.8435 |
-| GBP | EUR | reference | 1.183 |
-| GBP | HKD | reference | 10.3992 |
-| GBP | ILS | reference | 4.1135 |
-| GBP | INR | reference | 125.9783 |
-| GBP | JPY | reference | 209.4823 |
-| GBP | KRW | reference | 1780.3607 |
-| GBP | MYR | reference | 5.4096 |
-| GBP | NOK | reference | 12.5728 |
-| GBP | NZD | reference | 2.3602 |
-| GBP | PLN | reference | 5.1683 |
-| GBP | SAR | reference | 4.9734 |
-| GBP | SEK | reference | 13.1997 |
-| GBP | SGD | reference | 1.6997 |
-| GBP | THB | reference | 44.4158 |
-| GBP | TRY | reference | 65.4904 |
-| GBP | TWD | reference | 42.9315 |
-| GBP | USD | reference | 1.3253 |
-| GBP | ZAR | reference | 21.8884 |
+| GBP | AUD | reference | 1.9169 |
+| GBP | CAD | reference | 1.888 |
+| GBP | CHF | reference | 1.0986 |
+| GBP | CNY | reference | 8.9247 |
+| GBP | DKK | reference | 8.8693 |
+| GBP | EUR | reference | 1.1866 |
+| GBP | HKD | reference | 10.4794 |
+| GBP | ILS | reference | 4.1323 |
+| GBP | INR | reference | 126.8068 |
+| GBP | JPY | reference | 210.8706 |
+| GBP | KRW | reference | 1780.7561 |
+| GBP | MYR | reference | 5.45 |
+| GBP | NOK | reference | 12.5978 |
+| GBP | NZD | reference | 2.3573 |
+| GBP | PLN | reference | 5.1809 |
+| GBP | SAR | reference | 5.011 |
+| GBP | SEK | reference | 13.2145 |
+| GBP | SGD | reference | 1.708 |
+| GBP | THB | reference | 44.6057 |
+| GBP | TRY | reference | 66.1329 |
+| GBP | TWD | reference | 43.2717 |
+| GBP | USD | reference | 1.3353 |
+| GBP | ZAR | reference | 21.9527 |
 
 </details>
 
