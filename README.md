@@ -20,6 +20,10 @@
 
 > **Official rate, not mid-market:** every value here is a number Bank of England itself published, fixed once printed and carrying the central bank's own `rate_date` — what filings and audits require. Need the live mid-market rate for pricing or display instead? Use the [mid-market API](https://allratestoday.com/docs/) or [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk). The two can diverge by several percent.
 
+## 🔑 Get your API key
+
+Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
+
 ## ⚡ Try it without a key
 
 The latest Bank of England table is also served keyless, CORS-open and edge-cached, for evaluation, embeds and AI agents:
@@ -43,42 +47,38 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-16 by Bank of England — 23 rates. Updated 2026-10-19.</summary>
+<summary>Table as text: published 2026-10-19 by Bank of England — 23 rates. Updated 2026-10-20.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| GBP | AUD | reference | 1.9169 |
-| GBP | CAD | reference | 1.888 |
-| GBP | CHF | reference | 1.0986 |
-| GBP | CNY | reference | 8.9247 |
-| GBP | DKK | reference | 8.8693 |
-| GBP | EUR | reference | 1.1866 |
-| GBP | HKD | reference | 10.4794 |
-| GBP | ILS | reference | 4.1323 |
-| GBP | INR | reference | 126.8068 |
-| GBP | JPY | reference | 210.8706 |
-| GBP | KRW | reference | 1780.7561 |
-| GBP | MYR | reference | 5.45 |
-| GBP | NOK | reference | 12.5978 |
-| GBP | NZD | reference | 2.3573 |
-| GBP | PLN | reference | 5.1809 |
-| GBP | SAR | reference | 5.011 |
-| GBP | SEK | reference | 13.2145 |
-| GBP | SGD | reference | 1.708 |
-| GBP | THB | reference | 44.6057 |
-| GBP | TRY | reference | 66.1329 |
-| GBP | TWD | reference | 43.2717 |
-| GBP | USD | reference | 1.3353 |
-| GBP | ZAR | reference | 21.9527 |
+| GBP | AUD | reference | 1.9067 |
+| GBP | CAD | reference | 1.8764 |
+| GBP | CHF | reference | 1.0997 |
+| GBP | CNY | reference | 8.8996 |
+| GBP | DKK | reference | 8.8739 |
+| GBP | EUR | reference | 1.1872 |
+| GBP | HKD | reference | 10.4518 |
+| GBP | ILS | reference | 4.1331 |
+| GBP | INR | reference | 126.423 |
+| GBP | JPY | reference | 210.9892 |
+| GBP | KRW | reference | 1772.7457 |
+| GBP | MYR | reference | 5.4369 |
+| GBP | NOK | reference | 12.5298 |
+| GBP | NZD | reference | 2.3494 |
+| GBP | PLN | reference | 5.1908 |
+| GBP | SAR | reference | 4.9973 |
+| GBP | SEK | reference | 13.1938 |
+| GBP | SGD | reference | 1.7044 |
+| GBP | THB | reference | 44.7135 |
+| GBP | TRY | reference | 65.9916 |
+| GBP | TWD | reference | 43.2539 |
+| GBP | USD | reference | 1.3318 |
+| GBP | ZAR | reference | 21.8929 |
 
 </details>
 
 Source: [Official rates published by BOE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boe/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
-
-## 🔑 Get your API key
-
-Get a free API key at [allratestoday.com/register](https://allratestoday.com/register) — no credit card required. Latest rates are on every plan, including free.
 
 ## 📦 Installation
 
