@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/boe').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,33 +47,33 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-19 by Bank of England — 23 rates. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-20 by Bank of England — 23 rates. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| GBP | AUD | reference | 1.9067 |
-| GBP | CAD | reference | 1.8764 |
-| GBP | CHF | reference | 1.0997 |
-| GBP | CNY | reference | 8.8996 |
-| GBP | DKK | reference | 8.8739 |
-| GBP | EUR | reference | 1.1872 |
-| GBP | HKD | reference | 10.4518 |
-| GBP | ILS | reference | 4.1331 |
-| GBP | INR | reference | 126.423 |
-| GBP | JPY | reference | 210.9892 |
-| GBP | KRW | reference | 1772.7457 |
-| GBP | MYR | reference | 5.4369 |
-| GBP | NOK | reference | 12.5298 |
-| GBP | NZD | reference | 2.3494 |
-| GBP | PLN | reference | 5.1908 |
-| GBP | SAR | reference | 4.9973 |
-| GBP | SEK | reference | 13.1938 |
-| GBP | SGD | reference | 1.7044 |
-| GBP | THB | reference | 44.7135 |
-| GBP | TRY | reference | 65.9916 |
-| GBP | TWD | reference | 43.2539 |
-| GBP | USD | reference | 1.3318 |
-| GBP | ZAR | reference | 21.8929 |
+| GBP | AUD | reference | 1.9099 |
+| GBP | CAD | reference | 1.881 |
+| GBP | CHF | reference | 1.105 |
+| GBP | CNY | reference | 8.9362 |
+| GBP | DKK | reference | 8.8999 |
+| GBP | EUR | reference | 1.1908 |
+| GBP | HKD | reference | 10.5059 |
+| GBP | ILS | reference | 4.1354 |
+| GBP | INR | reference | 127.0803 |
+| GBP | JPY | reference | 211.4866 |
+| GBP | KRW | reference | 1775.9334 |
+| GBP | MYR | reference | 5.4654 |
+| GBP | NOK | reference | 12.5886 |
+| GBP | NZD | reference | 2.3541 |
+| GBP | PLN | reference | 5.199 |
+| GBP | SAR | reference | 5.0213 |
+| GBP | SEK | reference | 13.2339 |
+| GBP | SGD | reference | 1.7098 |
+| GBP | THB | reference | 44.9653 |
+| GBP | TRY | reference | 66.364 |
+| GBP | TWD | reference | 43.6708 |
+| GBP | USD | reference | 1.3387 |
+| GBP | ZAR | reference | 21.9168 |
 
 </details>
 
