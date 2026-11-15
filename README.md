@@ -31,7 +31,38 @@ Get a free API key at [allratestoday.com/register](https://allratestoday.com/reg
 The image is rendered live from the keyless endpoint, so it follows the central bank's publications on npm and on GitHub alike without a new release. The same table as text is folded below for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-_The table is filled in by the daily workflow._
+<details>
+<summary>Table as text: published 2026-11-12 by Bank of England — 23 rates. Updated 2026-11-15.</summary>
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| GBP | AUD | reference | 1.9438 |
+| GBP | CAD | reference | 1.8879 |
+| GBP | CHF | reference | 1.1049 |
+| GBP | CNY | reference | 8.8341 |
+| GBP | DKK | reference | 8.9418 |
+| GBP | EUR | reference | 1.1961 |
+| GBP | HKD | reference | 10.3846 |
+| GBP | ILS | reference | 4.2261 |
+| GBP | INR | reference | 124.4954 |
+| GBP | JPY | reference | 211.6742 |
+| GBP | KRW | reference | 1766.5444 |
+| GBP | MYR | reference | 5.3989 |
+| GBP | NOK | reference | 12.674 |
+| GBP | NZD | reference | 2.3851 |
+| GBP | PLN | reference | 5.2661 |
+| GBP | SAR | reference | 4.968 |
+| GBP | SEK | reference | 13.2496 |
+| GBP | SGD | reference | 1.7035 |
+| GBP | THB | reference | 44.8553 |
+| GBP | TRY | reference | 66.5293 |
+| GBP | TWD | reference | 43.6692 |
+| GBP | USD | reference | 1.3238 |
+| GBP | ZAR | reference | 22.1913 |
+
+</details>
+
+Source: [Official rates published by BOE, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/boe/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
 
 ## 📦 Installation
